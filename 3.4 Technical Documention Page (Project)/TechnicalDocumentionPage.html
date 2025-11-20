@@ -8,22 +8,40 @@
 </head>
 
 <body>
-    <nav>
-        <header>CSS Documentation</header>
+    <nav id="navbar">
+        <header class="nav-title">CSS Documentation</header>
         <a class="nav-link" href="#Selectors">Selectors</a>
         <a class="nav-link" href="#Box_Model">Box Model</a>
-        <a class="nav-link" href="Positioning">Positioning</a>
-        <a class="nav-link" href="Flexbox">Flexbox</a>
-        <a class="nav-link" href="Typography">Typography</a>
-        <a class="nav-link" href="Colors_Backgrounds">Colors & Backgrounds</a>
-        <a class="nav-link" href="Grid">Grid</a>
-        <a class="nav-link" href="Units_and_Sizing">Units and Sizing</a>
-        <a class="nav-link" href="Transitions_and_Transforms">Transitions & Transforms</a>
+        <a class="nav-link" href="#Positioning">Positioning</a>
+        <a class="nav-link" href="#Flexbox">Flexbox</a>
+        <a class="nav-link" href="#Typography">Typography</a>
+        <a class="nav-link" href="#Colors_Backgrounds">Colors & Backgrounds</a>
+        <a class="nav-link" href="#Grid">Grid</a>
+        <a class="nav-link" href="#Units_and_Sizing">Units and Sizing</a>
+        <a class="nav-link" href="#Transitions_and_Transforms">Transitions & Transforms</a>
         <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
     </nav>    
-    <main>
+    <main id="mainsection">
         <section>
             <header>Selectors</header>
+            <p>Selectors tell CSS which elements to style. They allow you to target elements by their type, class, id, attributes, and relationships inside the HTML structure.</p>
+            <p>Choosing the right selector makes your CSS cleaner, more reusable, and easier to maintain as your project grows.</p>
+                <ul>
+                <li>Type selector — targets elements by their tag name (e.g., p, h1, img)</li>
+                    <code>p { color: blue; }</code>
+                <li>Class selector — targets elements with a class using a dot (.container)</li>
+                    <code>.btn { padding: 1rem; }</code>
+                <li>ID selector — targets a unique element using a hashtag (#main)</li>
+                    <code>#main-title { font-size: 2rem; }</code>
+                <li>Attribute selector — targets by attributes (e.g., input[type="text"])</li>
+                    <code>input[type="text"] { border: 1px solid gray; }</code>
+                <li>Pseudo-classes — target states (:hover, :focus, :active)</li>
+                    <code>a:hover { text-decoration: underline; }</code>
+                <li>Pseudo-elements — target parts of elements (::before, ::after)</li>
+                    <code>p::before { content: "→ "; color: gray; }</code>
+                <li>Combinators — target elements based on relationships (descendants, siblings)</li>
+                    <code>.nav > li { margin-bottom: 0.5rem; }</code>
+                </ul>
         </section>
 
         <section>
