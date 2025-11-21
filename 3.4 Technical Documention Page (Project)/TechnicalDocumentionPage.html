@@ -15,68 +15,85 @@
         <a class="nav-link" href="#Positioning">Positioning</a>
         <a class="nav-link" href="#Flexbox">Flexbox</a>
         <a class="nav-link" href="#Typography">Typography</a>
-        <a class="nav-link" href="#Colors_Backgrounds">Colors & Backgrounds</a>
+        <a class="nav-link" href="#Colors_and_Backgrounds">Colors & Backgrounds</a>
         <a class="nav-link" href="#Grid">Grid</a>
         <a class="nav-link" href="#Units_and_Sizing">Units and Sizing</a>
         <a class="nav-link" href="#Transitions_and_Transforms">Transitions & Transforms</a>
         <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
     </nav>    
-    <main id="mainsection">
-        <section>
+    <main id="main-doc">
+        <section id="Selectors" class="main-section">
             <header>Selectors</header>
+            <hr>
             <p>Selectors tell CSS which elements to style. They allow you to target elements by their type, class, id, attributes, and relationships inside the HTML structure.</p>
             <p>Choosing the right selector makes your CSS cleaner, more reusable, and easier to maintain as your project grows.</p>
                 <ul>
-                <li>Type selector — targets elements by their tag name (e.g., p, h1, img)</li>
+                <li><strong>Selector</strong> — targets elements by their tag name (e.g., p, h1, img)</li>
                     <code>p { color: blue; }</code>
-                <li>Class selector — targets elements with a class using a dot (.container)</li>
+                <li><strong>Class selector</strong> — targets elements with a class using a dot (.container)</li>
                     <code>.btn { padding: 1rem; }</code>
-                <li>ID selector — targets a unique element using a hashtag (#main)</li>
+                <li><strong>ID selector</strong> — targets a unique element using a hashtag (#main)</li>
                     <code>#main-title { font-size: 2rem; }</code>
-                <li>Attribute selector — targets by attributes (e.g., input[type="text"])</li>
+                <li><strong>Attribute selector</strong> — targets by attributes (e.g., input[type="text"])</li>
                     <code>input[type="text"] { border: 1px solid gray; }</code>
-                <li>Pseudo-classes — target states (:hover, :focus, :active)</li>
+                <li><strong>Pseudo-classes</strong> — target states (:hover, :focus, :active)</li>
                     <code>a:hover { text-decoration: underline; }</code>
-                <li>Pseudo-elements — target parts of elements (::before, ::after)</li>
+                <li><strong>Pseudo-elements</strong> — target parts of elements (::before, ::after)</li>
                     <code>p::before { content: "→ "; color: gray; }</code>
-                <li>Combinators — target elements based on relationships (descendants, siblings)</li>
+                <li><strong>Combinators</strong> — target elements based on relationships (descendants, siblings)</li>
                     <code>.nav > li { margin-bottom: 0.5rem; }</code>
                 </ul>
         </section>
 
-        <section>
+        <section id="Box_Model" class="main-section">
             <header>Box Model</header>
+            <hr>
+            <p>The CSS Box Model describes how every element on a webpage is structured. Each element is treated as a box made up of content, padding, border, and margin.</p>
+            <p>Understanding the box model is essential for controlling spacing, layout, and alignment.</p>
+            <ul>
+                <li><strong>Box-sizing</strong> — controls whether padding/border count in the width</li>
+                <code>* { box-sizing: border-box; }</code>
+                <li><strong>Content</strong> — the actual text or image inside the element</li>
+                <code>p { width: 200px; height: 100px; }</code>
+                <li><strong>Padding</strong> — space between the content and the border</li>
+                <code>div { padding: 20px; }</code>
+                <li><strong>Border</strong> — the line surrounding the padding and content</li>
+                <code>img { border: 2px solid black; }</code>
+                <li><strong>Margin</strong> — space outside the border between elements</li>
+                <code>.card { margin: 1.5rem; }</code>
+            </ul>
+            <img id="boxmodel" src="images/css_box_model.jpeg">
         </section>
 
-        <section>
+        <section id="Positioning" class="main-section">
             <header>Positioning</header>
         </section>
 
-        <section>
+        <section id="Flexbox" class="main-section">
             <header>Flexbox</header>
         </section>
 
-        <section>
+        <section id="Typography" class="main-section">
             <header>Typography</header>
         </section>
 
-        <section>
+        <section id="Colors_and_Backgrounds" class="main-section">
             <header>Colors & Backgrounds</header>
         </section>
 
-        <section>
+        <section id="Grid" class="main-section">
             <header>Grid</header>
         </section>
 
-        <section>
+        <section id="Units_and_Sizing" class="main-section">
             <header>Units and Sizing</header>
         </section>
 
-        <section>
+        <section id="Transitions_and_Transforms" class="main-section">
             <header>Transitions & Transforms</header>
         </section>
 
-        <section>
+        <section id="Responsive_Design" class="main-section">
             <header>Responsive Design</header>
         </section>
 
